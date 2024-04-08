@@ -29,6 +29,14 @@ body {
   min-width: 72.8rem;
 }
 
+.errorBorderRed {
+  border-color: $Light-red !important;
+}
+
+.errorTextRed {
+  color: $Light-red;
+}
+
 .date {
   background-color: $White;
   min-height: 65.1rem;
@@ -42,6 +50,7 @@ body {
     display: flex;
     div {
       margin-right: 3.2rem;
+      position: relative;
       h3 {
         letter-spacing: 0.25rem;
         font-size: 1.4rem;
@@ -58,11 +67,20 @@ body {
         padding-left: 2.4rem;
         letter-spacing: 0.1rem;
         cursor: pointer;
+        margin-bottom: 3rem;
       }
       input:focus,
       input:hover {
         border-color: $Purple;
         outline: none;
+      }
+      p {
+        position: absolute;
+        bottom: 0;
+        color: $Light-red;
+        font-size: 1.4rem;
+        font-weight: 400;
+        font-style: italic;
       }
     }
   }

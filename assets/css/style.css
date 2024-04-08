@@ -61,6 +61,14 @@ body {
   min-width: 72.8rem;
 }
 
+.errorBorderRed {
+  border-color: hsl(0, 100%, 67%) !important;
+}
+
+.errorTextRed {
+  color: hsl(0, 100%, 67%);
+}
+
 .date {
   background-color: hsl(0, 0%, 100%);
   min-height: 65.1rem;
@@ -75,6 +83,7 @@ body {
 }
 .date__inputs div {
   margin-right: 3.2rem;
+  position: relative;
 }
 .date__inputs div h3 {
   letter-spacing: 0.25rem;
@@ -92,11 +101,20 @@ body {
   padding-left: 2.4rem;
   letter-spacing: 0.1rem;
   cursor: pointer;
+  margin-bottom: 3rem;
 }
 .date__inputs div input:focus,
 .date__inputs div input:hover {
   border-color: hsl(259, 100%, 65%);
   outline: none;
+}
+.date__inputs div p {
+  position: absolute;
+  bottom: 0;
+  color: hsl(0, 100%, 67%);
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
 }
 .date__arrow {
   position: relative;
