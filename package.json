@@ -1,0 +1,14 @@
+{
+  "name": "age-calculator-app",
+  "version": "1.0.0",
+  "description": "Age calculator app coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w assets/scss:assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.74.1"
+  }
+}

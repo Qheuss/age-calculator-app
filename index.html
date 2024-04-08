@@ -3,18 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Age calculator app</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -26,29 +22,46 @@
     </style>
   </head>
   <body>
-    <main>
-      <section>
+    <main class="date">
+      <section class="date__inputs container">
         <div>
-          <h2>Day</h2>
-          <input type="text" value="DD" />
+          <h3>DAY</h3>
+          <input
+            id="date__inputs-day"
+            type="text"
+            maxlength="2"
+            placeholder="DD"
+          />
         </div>
         <div>
-          <h2>Month</h2>
-          <input type="text" value="MM" />
+          <h3>MONTH</h3>
+          <input
+            id="date__inputs-month"
+            type="text"
+            maxlength="2"
+            placeholder="MM"
+          />
         </div>
         <div>
-          <h2>Year</h2>
-          <input type="text" value="YYYY" />
+          <h3>YEAR</h3>
+          <input
+            id="date__inputs-year"
+            type="text"
+            maxlength="4"
+            placeholder="YYYY"
+          />
         </div>
       </section>
-      <div>
+      <section class="date__arrow container">
         <hr />
-        <img src="./assets/images/icon-arrow.svg" alt="arrow" />
-      </div>
-      <section>
-        <h3><span>--</span>years</h3>
-        <h3><span>--</span>months</h3>
-        <h3><span>--</span>days</h3>
+        <a id="date__arrow-button" href="#">
+          <img src="./assets/images/icon-arrow.svg" alt="arrow" />
+        </a>
+      </section>
+      <section class="date__outputs container">
+        <h2><span id="date__outputs-year">--</span>years</h2>
+        <h2><span id="date__outputs-month">--</span>months</h2>
+        <h2><span id="date__outputs-day">--</span>days</h2>
       </section>
     </main>
     <footer>
@@ -59,5 +72,6 @@
         >. Coded by <a href="#">Quentin Heusse</a>.
       </div>
     </footer>
+    <script src="./assets/scripts/main.js"></script>
   </body>
 </html>

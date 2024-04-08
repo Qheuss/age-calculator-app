@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+@import 'variables';
+@import 'style-mobile';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: $Off-white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 0 6rem;
+  min-width: 72.8rem;
+}
+
+.date {
+  background-color: $White;
+  min-height: 65.1rem;
+  border-radius: 2.4rem 2.4rem 20rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  &__inputs {
+    color: $Smokey-grey;
+    display: flex;
+    div {
+      margin-right: 3.2rem;
+      h3 {
+        letter-spacing: 0.25rem;
+        font-size: 1.4rem;
+        padding-bottom: 0.8rem;
+      }
+      input {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3.2rem;
+        font-weight: 700;
+        border-radius: 0.8rem;
+        border: 1px solid $Light-grey;
+        width: 16rem;
+        height: 7.2rem;
+        padding-left: 2.4rem;
+        letter-spacing: 0.1rem;
+        cursor: pointer;
+      }
+      input:focus,
+      input:hover {
+        border-color: $Purple;
+        outline: none;
+      }
+    }
+  }
+
+  &__arrow {
+    position: relative;
+    hr {
+      border: none;
+      border-top: 1px solid $Light-grey;
+    }
+    img {
+      background-color: $Purple;
+      border-radius: 50%;
+      padding: 2.5rem;
+      width: 9.6rem;
+      height: 9.6rem;
+      position: absolute;
+      top: -4.8rem;
+      right: 0;
+      transition: background-color 0.2s ease-in-out;
+    }
+    img:hover {
+      background-color: $Off-black;
+    }
+  }
+
+  &__outputs {
+    h2 {
+      font-size: 10.4rem;
+      font-weight: 800;
+      font-style: italic;
+      line-height: 11rem;
+      letter-spacing: -0.2rem;
+      span {
+        color: $Purple;
+      }
+    }
+  }
+}
