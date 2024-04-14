@@ -41,12 +41,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 4.8rem;
+  gap: 4rem;
 }
 .date__inputs {
   color: hsl(0, 1%, 44%);
   display: flex;
   margin-top: 5.6rem;
+  max-height: 10.1rem;
 }
 .date__inputs div {
   margin-right: 3.2rem;
