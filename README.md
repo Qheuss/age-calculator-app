@@ -23,10 +23,6 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 - SASS
 - JS
 
-### Useful resources
-
-- [CSS cards](https://www.w3schools.com/howto/howto_css_cards.asp)
-
 ## Author
 
 - Frontend Mentor - [@Qheuss](https://www.frontendmentor.io/profile/Qheuss)
