@@ -25,6 +25,7 @@ inputDay.value = inputMonth.value = inputYear.value = '';
 
 // calculator
 btn.addEventListener('click', function () {
+  // outputs values
   outputYear.textContent = date.getFullYear() - inputYear.value;
   outputMonth.textContent = date.getMonth() + 1 - inputMonth.value;
   outputDay.textContent = date.getDate() - inputDay.value;
@@ -34,6 +35,7 @@ btn.addEventListener('click', function () {
   outputMonth.style.color = '#854dff';
   outputYear.style.color = '#854dff';
 
+  // if outputs are negative
   if (outputDay.textContent <= 0) {
     outputMonth.textContent = outputMonth.textContent - 1;
     outputDay.textContent = 31 + Number(outputDay.textContent);
