@@ -40,10 +40,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 4.8rem;
 
   &__inputs {
     color: $Smokey-grey;
     display: flex;
+    margin-top: 5.6rem;
     div {
       margin-right: 3.2rem;
       h3 {
@@ -101,6 +103,7 @@ body {
   }
 
   &__outputs {
+    margin-bottom: 5.6rem;
     h1 {
       font-size: 10.4rem;
       font-weight: 800;
@@ -109,7 +112,7 @@ body {
       letter-spacing: -0.2rem;
       span {
         color: $Purple;
-        padding-right: 0.8rem;
+        padding-right: 0.9rem;
       }
     }
   }
