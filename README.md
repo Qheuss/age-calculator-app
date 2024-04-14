@@ -7,8 +7,6 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 - [Overview](#overview)
   - [Screenshot](#screenshot)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
